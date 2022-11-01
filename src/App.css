@@ -1,0 +1,54 @@
+:root
+{
+  --yellow: #F5C32C;
+    --orange : #1CD6CE;
+    --black : #242D49;
+    --gray : #788097;
+    --blueCard : #DDF8FE;
+    --purple: #A460ED;
+    --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
+    --orangeCard: #FEF5AC;
+    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+    --myOrange:#fb982f;
+}
+
+.App{
+    padding: 0.5rem 3.5rem;
+    overflow: hidden;
+    color: var(--black);    
+}
+/* Since we have too many buttons we include the general button styling here */
+.button{
+  height: 50px;
+  border-radius: 36px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  /* padding: 10px; */
+  /* to make the color of the button good looking */
+  padding:5px 36px 5px 36px;
+  background: linear-gradient(180deg, #fcd50f 26.71%, #fb982f 99.36%);
+ box-shadow: 0px 20px 24px 3px rgb(251,161,40,0.42 );
+ /* But we got to see the bad boundary because the view height is only 10% and to fix this we play with the padding */
+
+}
+.button:hover{
+  background:white;
+  cursor: pointer;
+  color:var(--orange);
+  border: 1px solid var(--orange);
+  box-shadow: 0px 20px 24px 3px var(--orange);;
+
+
+}
+  
+  @media screen and (max-width: 480px) {
+    .App {
+      padding: 0.5rem 1rem;
+
+    }
+  }
+
+  
+
+  
